@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tracking - Amizo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Order Tracking Section -->
+    <section class="order-tracking">
+        <h2>📍 Track Your Order</h2>
+        <p>Stay updated with your order status</p>
+
+        <div class="tracking-steps">
+            <div class="step" id="step1">✅ Order Placed</div>
+            <div class="step" id="step2">⏳ Preparing</div>
+            <div class="step" id="step3">🚴 Out for Delivery</div>
+            <div class="step" id="step4">🎉 Delivered</div>
+        </div>
+
+        <progress id="progress-bar" value="25" max="100"></progress>
+
+        <button class="back-home-btn" onclick="location.href='index.html'">Back to Home</button>
+    </section>
+
+    <script src="js/order-tracking.js"></script>
+</body>
+</html>

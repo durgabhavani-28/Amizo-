@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Amizo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Back Button -->
+    <div class="back-btn">
+        <a href="checkout.html">⬅ Back to Checkout</a>
+    </div>
+
+    <!-- Payment Section -->
+    <section class="payment">
+        <h2>Choose Payment Method</h2>
+        
+        <form id="payment-form">
+            <label>
+                <input type="radio" name="payment-method" value="COD" checked> Cash on Delivery (COD)
+            </label>
+
+            <label>
+                <input type="radio" name="payment-method" value="UPI"> UPI (Google Pay, PhonePe, Paytm)
+            </label>
+
+            <label>
+                <input type="radio" name="payment-method" value="Card"> Credit/Debit Card
+            </label>
+
+            <label>
+                <input type="radio" name="payment-method" value="Wallet"> Amizo Wallet
+            </label>
+
+            <h3>Total Price: ₹<span id="payment-total">0</span></h3>
+
+            <button type="submit" class="confirm-btn">Confirm Order</button>
+        </form>
+    </section>
+
+    <script src="js/payment.js"></script>
+</body>
+</html>

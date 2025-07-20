@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Amizo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Back Button -->
+    <div class="back-btn">
+        <a href="cart.html">⬅ Back to Cart</a>
+    </div>
+
+    <!-- Checkout Section -->
+    <section class="checkout">
+        <h2>Checkout</h2>
+        <form id="checkout-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="address">Delivery Address:</label>
+            <textarea id="address" required></textarea>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" required>
+
+            <h3>Total Price: ₹<span id="checkout-total">0</span></h3>
+
+            <button type="submit" class="checkout-btn" onclick="location.href='payment.html'">Proceed to Payment</button>
+
+        </form>
+    </section>
+
+    <script src="js/checkout.js"></script>
+</body>
+</html>

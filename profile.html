@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Amizo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- User Profile Section -->
+    <section class="user-profile">
+        <h2>👤 My Profile</h2>
+        <div class="profile-card">
+            <img src="assets/images/user-avatar.png" alt="User Avatar">
+            <h3 id="user-name">John Doe</h3>
+            <p>Email: <span id="user-email">john@example.com</span></p>
+            <p>Address: <span id="user-address">Peddapuram, AP</span></p>
+            <button class="edit-profile-btn" onclick="editProfile()">Edit Profile</button>
+        </div>
+
+        <h2>📦 Order History</h2>
+        <ul id="order-history">
+            <li>No past orders yet.</li>
+        </ul>
+
+        <button class="back-home-btn" onclick="location.href='index.html'">Back to Home</button>
+    </section>
+
+    <script src="js/profile.js"></script>
+</body>
+</html>

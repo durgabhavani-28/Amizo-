@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Amizo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Back Button -->
+    <div class="back-btn">
+        <a href="index.html">⬅ Back to Home</a>
+    </div>
+
+    <!-- Cart Section -->
+    <section class="cart">
+        <h2>Your Cart</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- Items will be added here using JavaScript -->
+            </tbody>
+        </table>
+        <h3>Total Price: ₹<span id="total-price">0</span></h3>
+        <button class="checkout-btn" onclick="location.href='checkout.html'">Proceed to Checkout</button>
+
+    </section>
+
+    <script src="js/cart.js"></script>
+</body>
+</html>
